@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0000000000000000000020 /* AudioCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000010 /* AudioCapture.swift */; };
+		AA0000000000000000000021 /* BackendProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000011 /* BackendProtocol.swift */; };
+		AA0000000000000000000022 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000012 /* ContentView.swift */; };
+		AA0000000000000000000023 /* ProcessBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000013 /* ProcessBackend.swift */; };
+		AA0000000000000000000024 /* SFSpeechBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000014 /* SFSpeechBackend.swift */; };
+		AA0000000000000000000025 /* TranscribeEvalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000015 /* TranscribeEvalApp.swift */; };
+		AA0000000000000000000026 /* ScreenCaptureKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000019 /* ScreenCaptureKit.framework */; };
+		AA0000000000000000000027 /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA000000000000000000001A /* Speech.framework */; };
+		AA0000000000000000000028 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA000000000000000000001B /* AVFoundation.framework */; };
+		AA000000000000000000002C /* AccuracyEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000001C /* AccuracyEngine.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA0000000000000000000010 /* AudioCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCapture.swift; sourceTree = "<group>"; };
+		AA0000000000000000000011 /* BackendProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendProtocol.swift; sourceTree = "<group>"; };
+		AA0000000000000000000012 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000013 /* ProcessBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessBackend.swift; sourceTree = "<group>"; };
+		AA0000000000000000000014 /* SFSpeechBackend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSpeechBackend.swift; sourceTree = "<group>"; };
+		AA0000000000000000000015 /* TranscribeEvalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscribeEvalApp.swift; sourceTree = "<group>"; };
+		AA0000000000000000000016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA0000000000000000000018 /* TranscribeEval.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranscribeEval.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0000000000000000000019 /* ScreenCaptureKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenCaptureKit.framework; path = System/Library/Frameworks/ScreenCaptureKit.framework; sourceTree = SDKROOT; };
+		AA000000000000000000001A /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
+		AA000000000000000000001B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AA000000000000000000001C /* AccuracyEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccuracyEngine.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA0000000000000000000031 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000000000000000000026 /* ScreenCaptureKit.framework in Frameworks */,
+				AA0000000000000000000027 /* Speech.framework in Frameworks */,
+				AA0000000000000000000028 /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA0000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000003 /* Sources */,
+				AA0000000000000000000005 /* Support */,
+				AA0000000000000000000006 /* Frameworks */,
+				AA0000000000000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000003 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000001C /* AccuracyEngine.swift */,
+				AA0000000000000000000010 /* AudioCapture.swift */,
+				AA0000000000000000000011 /* BackendProtocol.swift */,
+				AA0000000000000000000012 /* ContentView.swift */,
+				AA0000000000000000000013 /* ProcessBackend.swift */,
+				AA0000000000000000000014 /* SFSpeechBackend.swift */,
+				AA0000000000000000000015 /* TranscribeEvalApp.swift */,
+			);
+			name = Sources;
+			path = Sources/TranscribeEval;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000018 /* TranscribeEval.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000005 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000016 /* Info.plist */,
+			);
+			name = Support;
+			path = TranscribeEval;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000006 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000019 /* ScreenCaptureKit.framework */,
+				AA000000000000000000001A /* Speech.framework */,
+				AA000000000000000000001B /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA0000000000000000000060 /* TranscribeEval */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0000000000000000000051 /* Build configuration list for PBXNativeTarget "TranscribeEval" */;
+			buildPhases = (
+				AA0000000000000000000030 /* Sources */,
+				AA0000000000000000000031 /* Frameworks */,
+				AA0000000000000000000032 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TranscribeEval;
+			productName = TranscribeEval;
+			productReference = AA0000000000000000000018 /* TranscribeEval.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA0000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					AA0000000000000000000060 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AA0000000000000000000050 /* Build configuration list for PBXProject "TranscribeEval" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA0000000000000000000002;
+			productRefGroup = AA0000000000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA0000000000000000000060 /* TranscribeEval */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA0000000000000000000032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA0000000000000000000030 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000000000000000000002C /* AccuracyEngine.swift in Sources */,
+				AA0000000000000000000020 /* AudioCapture.swift in Sources */,
+				AA0000000000000000000021 /* BackendProtocol.swift in Sources */,
+				AA0000000000000000000022 /* ContentView.swift in Sources */,
+				AA0000000000000000000023 /* ProcessBackend.swift in Sources */,
+				AA0000000000000000000024 /* SFSpeechBackend.swift in Sources */,
+				AA0000000000000000000025 /* TranscribeEvalApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA0000000000000000000040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA0000000000000000000041 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		AA0000000000000000000042 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				INFOPLIST_FILE = TranscribeEval/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transcribeeval.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AA0000000000000000000043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				INFOPLIST_FILE = TranscribeEval/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.transcribeeval.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA0000000000000000000050 /* Build configuration list for PBXProject "TranscribeEval" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000000000000000000040 /* Debug */,
+				AA0000000000000000000041 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0000000000000000000051 /* Build configuration list for PBXNativeTarget "TranscribeEval" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000000000000000000042 /* Debug */,
+				AA0000000000000000000043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA0000000000000000000001 /* Project object */;
+}

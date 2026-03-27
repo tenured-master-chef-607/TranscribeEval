@@ -1,0 +1,32 @@
+# API keys and secrets
+.env
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Swift Package Manager
+.build/
+
+# Xcode
+*.xcuserstate
+xcuserdata/
+*.xcodeproj/xcuserdata/
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+build/
+
+# macOS
+.DS_Store
+*.swp
+
+# Screenshots / local assets
+*.png
+
+# Backup files
+*.bak
