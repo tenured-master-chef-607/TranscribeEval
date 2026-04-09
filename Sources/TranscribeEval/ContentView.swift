@@ -6,13 +6,13 @@ struct ContentView: View {
 
     private static let scriptsDir: String = {
         let home = FileManager.default.homeDirectoryForCurrentUser.path
-        return "\(home)/Desktop/TranscribeEval/Scripts"
+        return "\(home)/Desktop/Projs/transcribeeval/Scripts"
     }()
 
     private let backends: [any TranscriptionBackend] = {
         let dir = ContentView.scriptsDir
         let home = FileManager.default.homeDirectoryForCurrentUser.path
-        let venv = "\(home)/Desktop/TranscribeEval/.venv/bin/python3"
+        let venv = "\(home)/Desktop/Projs/transcribeeval/.venv/bin/python3"
         let py = FileManager.default.fileExists(atPath: venv) ? venv : nil
         return [
             SFSpeechBackend(),
